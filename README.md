@@ -4,7 +4,7 @@ Simple library for Go to convert any data to string.
 
 ```go
 type hoge struct {
-  foo stringmark
+  foo string
   bar int
 }
 
@@ -38,6 +38,8 @@ str := gostr.Stringify(v)
 ```
 
 **Caution!**
+
+* The properties of the structure whose value is `nil` are omitted in the output.
 
 * This library doesn't support the following types.
 
